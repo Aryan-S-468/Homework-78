@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>My Family Book</title>
+</head>
+<body>
+<p id="first">My Family Book</p>
+ <img id="family_img" src="cover.jpg">
+ <p>
+     <h4 id="names"> </h4>
+ </p>
+  <div>
+        <button type="button" onclick="next()"> Next </button>
+ </div>
+ </body>
+ <script>
+var img = [
+"cover.jpg",
+"father.jpg",
+"mother.jpg",
+"sister.png",
+"grandmother.jpg",
+"me.jpg"
+];
+
+var f_names = [
+" ",
+"Deepak Suvarna",
+"Shilpa Suvarna",
+"Eashita Suvarna",
+"Mohini Rao",
+"Aryan Suvarna"
+];
+
+var i = 0;
+function next() { 
+    console.log (i)
+document.getElementById ("family_img").src = img[i];
+document.getElementById ("names").innerHTML = f_names[i];
+i++;                     
+}
+
+if (i == 4)
+  {
+    i=0
+  }
+ </script>
+ </html>
